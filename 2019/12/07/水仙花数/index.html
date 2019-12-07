@@ -6,21 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>hexo yilia主题配置 | BaLkue</title>
+  <title>水仙花数 | BaLkue</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在b站看到 up主 CodeSheep 关于hexo博客搭建的视频,自己跟着操作了一遍。成功的把博客搭建起来了，在此谢谢 CodeSheep 的奉献。下方放上视频地址：手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo">
-<meta name="keywords" content="yilia">
+  <meta name="description" content="前阵子在交流群里看到群友谈论水仙花数，自己也动手写了一下。">
+<meta name="keywords" content="面试 算法 习题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo yilia主题配置">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;30&#x2F;hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE&#x2F;index.html">
+<meta property="og:title" content="水仙花数">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;07&#x2F;%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0&#x2F;index.html">
 <meta property="og:site_name" content="BaLkue">
-<meta property="og:description" content="在b站看到 up主 CodeSheep 关于hexo博客搭建的视频,自己跟着操作了一遍。成功的把博客搭建起来了，在此谢谢 CodeSheep 的奉献。下方放上视频地址：手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo">
+<meta property="og:description" content="前阵子在交流群里看到群友谈论水仙花数，自己也动手写了一下。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;%E5%BE%AE%E5%8D%9A.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;subnav.png">
-<meta property="og:updated_time" content="2019-12-07T16:29:44.966Z">
+<meta property="og:updated_time" content="2019-12-07T15:50:22.335Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;%E5%BE%AE%E5%8D%9A.png">
   
     <link rel="alternative" href="/atom.xml" title="BaLkue" type="application/atom+xml">
   
@@ -152,39 +149,30 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo-yilia主题配置" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-水仙花数" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo yilia主题配置
+      水仙花数
     </h1>
   
 
         
-        <a href="/2019/11/30/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-  	<time datetime="2019-11-30T06:58:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-30</time>
+        <a href="/2019/12/07/%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0/" class="archive-article-date">
+  	<time datetime="2019-12-07T15:34:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在b站看到 up主 <strong>CodeSheep</strong> 关于hexo博客搭建的视频,自己跟着操作了一遍。成功的把博客搭建起来了，在此谢谢 CodeSheep 的奉献。<br>下方放上视频地址：<br><a href="https://www.bilibili.com/video/av44544186?from=search&seid=1340218828639235414" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a><br> <a id="more"></a></p>
-<h2 id="下面开始对yilia主题开始进行配置"><a href="#下面开始对yilia主题开始进行配置" class="headerlink" title="下面开始对yilia主题开始进行配置"></a>下面开始对yilia主题开始进行配置</h2><ul>
-<li><p>对文章的全文显示进行限制，只显示一部分内容：<br>在 MD 格式文章的正文插入 <strong><code>&lt;!-- more --&gt;</code></strong>即可，只会显示它之前的，此后的就不显示，点击文章标题，全文阅读才可看到，同时打开themes/yilia/下的 _config.yml文件，注释掉以下内容，去掉重复显示全文的选项。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 文章太长，截断按钮文字</span><br><span class="line"># excerpt_link: more</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置微博<br>在网页上登陆自己的<a href="https://weibo.com" target="_blank" rel="noopener">微博</a>,点击首页。<br><img src="/images/%E5%BE%AE%E5%8D%9A.png" alt="微博"><br>把网站复制下来，去掉 <strong>/home</strong> 之后的内容<br><a href="https://weibo.com/u/5650460866" target="_blank" rel="noopener">https://weibo.com/u/5650460866</a></p>
-</li>
-</ul>
-<p>修改 <strong>themes/yilia/</strong> 下的 <strong>_config.yml</strong> 文件下的 <strong>subnav: weibo</strong><br><img src="/images/subnav.png" alt="subnav"></p>
-<ul>
-<li>设置QQ<br>修改 <strong>themes/yilia/</strong> 下的 <strong>_config.yml</strong> 文件下的 <strong>subnav: qq</strong><br>qq: <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3025503553&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener">http://wpa.qq.com/msgrd?v=3&amp;uin=3025503553&amp;site=qq&amp;menu=yes</a></li>
-</ul>
-<p>把<strong>uin</strong>的内容改为自己的QQ号</p>
+        <p>前阵子在交流群里看到群友谈论水仙花数，自己也动手写了一下。</p>
+<a id="more"></a>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdbool.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Size</span> <span class="params">( <span class="keyword">int</span> x)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Element</span> <span class="params">( <span class="keyword">int</span> a[],<span class="keyword">int</span> x)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">daffodil</span><span class="params">(<span class="keyword">int</span> a , <span class="keyword">int</span> b)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a ,b;</span><br><span class="line">	<span class="keyword">bool</span> f = <span class="literal">true</span> ;  <span class="comment">//布尔类型只有两个值，false 和 true。</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"请输入两个整数（用空格隔开）：\n"</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;a,&amp;b);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span>(f)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(a &gt; b)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"输入错误，请重新输入：\n"</span>);</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;a,&amp;b);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			f = <span class="literal">false</span> ;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;	</span><br><span class="line">	</span><br><span class="line">	daffodil(a,b);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">daffodil</span><span class="params">(<span class="keyword">int</span> a , <span class="keyword">int</span> b )</span>  <span class="comment">//求出a、b整数之间的水仙花数</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n , p , sum , w = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> arr[<span class="number">20</span>] ;</span><br><span class="line">	</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = a ; i &lt;= b ;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        n = Size(i);</span><br><span class="line">		</span><br><span class="line">		Element(arr,i);	</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">0</span> ; k &lt; n ; k++)</span><br><span class="line">		&#123;</span><br><span class="line">			p  = arr[k];</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> s = <span class="number">0</span> ; s &lt; n<span class="number">-1</span> ; s++)</span><br><span class="line">			&#123;				 </span><br><span class="line">				 p = p * arr[k];			</span><br><span class="line">			&#125;</span><br><span class="line">			sum += p;					</span><br><span class="line">		&#125;		  </span><br><span class="line">		<span class="keyword">if</span>(sum == i &amp;&amp; sum &gt;<span class="number">100</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			 <span class="built_in">printf</span>(<span class="string">"%d\t"</span>,i);</span><br><span class="line">			 w++;</span><br><span class="line">		&#125;</span><br><span class="line">					</span><br><span class="line">		sum = <span class="number">0</span>;</span><br><span class="line">    &#125;	</span><br><span class="line">	<span class="keyword">if</span>(w == <span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		 <span class="built_in">printf</span>(<span class="string">"无"</span>);</span><br><span class="line">	&#125;    </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Size</span> <span class="params">( <span class="keyword">int</span> x)</span>   <span class="comment">//求出某整数的位数</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n = (<span class="keyword">int</span>)<span class="built_in">log10</span>(x) + <span class="number">1</span>;	</span><br><span class="line">	<span class="keyword">return</span> n;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//求出整数的每个位数（个位，十位，百位....），存入数组a中 </span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Element</span> <span class="params">( <span class="keyword">int</span> a[],<span class="keyword">int</span> x)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n = Size(x);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">	&#123;</span><br><span class="line">		a[i] = (<span class="keyword">int</span>)(x / (<span class="keyword">int</span>)<span class="built_in">pow</span>(<span class="number">10</span>, n - i - <span class="number">1</span>)) % <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -219,7 +207,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">yilia</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">面试 算法 习题</a>
         		</li>
       		
 		</ul>
@@ -275,7 +263,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/30/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/07/%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -289,18 +277,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/03/win10-%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/12/08/Markdown%E8%AF%AD%E6%B3%95%E4%BB%A5%E5%8F%8AMarkdown%E6%96%87%E7%AB%A0%E8%AE%BE%E7%BD%AE/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          win10 远程桌面连接问题 
+          Markdown语法以及Markdown文章设置
         
       </div>
     </a>
   
   
-    <a href="/2019/11/26/%E5%B0%8F%E4%BB%99%E5%A5%B3/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">小仙女</div>
+    <a href="/2019/12/03/win10-%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">win10 远程桌面连接问题 </div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -328,7 +316,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hexo-yilia主题配置" data-title="hexo yilia主题配置" data-url="http://yoursite.com/2019/11/30/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"></div>
+	<div class="ds-thread" data-thread-key="水仙花数" data-title="水仙花数" data-url="http://yoursite.com/2019/12/07/%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -350,7 +338,7 @@
   
 
   
-  <div id="SOHUCS" sid="hexo-yilia主题配置" ></div> 
+  <div id="SOHUCS" sid="水仙花数" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
