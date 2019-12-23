@@ -6,21 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>hexo yilia主题配置 | BaLkue</title>
+  <title>将windows下的文件上传到阿里云Linux服务器上 | BaLkue</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在b站看到 up主 CodeSheep 关于hexo博客搭建的视频,自己跟着操作了一遍。成功的把博客搭建起来了，在此谢谢 CodeSheep 的奉献。下方放上视频地址：手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo">
-<meta name="keywords" content="yilia">
+  <meta name="description" content="工具&#x2F;环境准备：xshell 、下载地址: xshell1.已经安装好xshell工具，并且连接上了Linux服务器，具体操作步骤见【xshell的安装及连接linux的使用方法】2.保证windows 和 linux 服务器都可以连接上网络；必须使用有下载权限的用户操作，以下操作全部是在xshell下面操作的：">
+<meta name="keywords" content="服务器 传输">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo yilia主题配置">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;30&#x2F;hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE&#x2F;index.html">
+<meta property="og:title" content="将windows下的文件上传到阿里云Linux服务器上">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;23&#x2F;%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A&#x2F;index.html">
 <meta property="og:site_name" content="BaLkue">
-<meta property="og:description" content="在b站看到 up主 CodeSheep 关于hexo博客搭建的视频,自己跟着操作了一遍。成功的把博客搭建起来了，在此谢谢 CodeSheep 的奉献。下方放上视频地址：手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo">
+<meta property="og:description" content="工具&#x2F;环境准备：xshell 、下载地址: xshell1.已经安装好xshell工具，并且连接上了Linux服务器，具体操作步骤见【xshell的安装及连接linux的使用方法】2.保证windows 和 linux 服务器都可以连接上网络；必须使用有下载权限的用户操作，以下操作全部是在xshell下面操作的：">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE&#x2F;%E5%BE%AE%E5%8D%9A.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE&#x2F;subnav.png">
-<meta property="og:updated_time" content="2019-12-10T10:43:42.818Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A&#x2F;ml1.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A&#x2F;ml2.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A&#x2F;ml3.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A&#x2F;sd.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A&#x2F;rz.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A&#x2F;ls.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A&#x2F;xj.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A&#x2F;jm.png">
+<meta property="og:updated_time" content="2019-12-23T16:01:23.680Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE&#x2F;%E5%BE%AE%E5%8D%9A.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A&#x2F;ml1.png">
   
     <link rel="alternative" href="/atom.xml" title="BaLkue" type="application/atom+xml">
   
@@ -146,39 +152,62 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo-yilia主题配置" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-将windows下的文件上传到阿里云Linux服务器上" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo yilia主题配置
+      将windows下的文件上传到阿里云Linux服务器上
     </h1>
   
 
         
-        <a href="/2019/11/30/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-  	<time datetime="2019-11-30T06:58:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-30</time>
+        <a href="/2019/12/23/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/" class="archive-article-date">
+  	<time datetime="2019-12-23T14:43:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在b站看到 up主 <strong>CodeSheep</strong> 关于hexo博客搭建的视频,自己跟着操作了一遍。成功的把博客搭建起来了，在此谢谢 CodeSheep 的奉献。<br>下方放上视频地址：<br><a href="https://www.bilibili.com/video/av44544186?from=search&seid=1340218828639235414" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a><br> <a id="more"></a></p>
-<h2 id="下面开始对yilia主题开始进行配置"><a href="#下面开始对yilia主题开始进行配置" class="headerlink" title="下面开始对yilia主题开始进行配置"></a>下面开始对yilia主题开始进行配置</h2><ul>
-<li><p>对文章的全文显示进行限制，只显示一部分内容：<br>在 MD 格式文章的正文插入 <strong><code>&lt;!-- more --&gt;</code></strong>即可，只会显示它之前的，此后的就不显示，点击文章标题，全文阅读才可看到，同时打开themes/yilia/下的 _config.yml文件，注释掉以下内容，去掉重复显示全文的选项。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 文章太长，截断按钮文字</span><br><span class="line"># excerpt_link: more</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置微博<br>在网页上登陆自己的<a href="https://weibo.com" target="_blank" rel="noopener">微博</a>,点击首页。<br><img src="/images/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/%E5%BE%AE%E5%8D%9A.png" alt="微博"><br>把网站复制下来，去掉 <strong>/home</strong> 之后的内容<br><a href="https://weibo.com/u/5650460866" target="_blank" rel="noopener">https://weibo.com/u/5650460866</a></p>
-</li>
+        <p>工具/环境准备：xshell 、<br>下载地址: <a href="https://www.netsarang.com/zh/xshell/" target="_blank" rel="noopener">xshell</a><br>1.已经安装好xshell工具，并且连接上了Linux服务器，具体操作步骤见【xshell的安装及连接linux的使用方法】<br>2.保证windows 和 linux 服务器都可以连接上网络；<br>必须使用有下载权限的用户操作，以下操作全部是在xshell下面操作的：</p>
+<a id="more"></a>
+<h1 id="一、使用RZ工具进行传输"><a href="#一、使用RZ工具进行传输" class="headerlink" title="一、使用RZ工具进行传输"></a>一、使用RZ工具进行传输</h1><ul>
+<li>1.使用 yum provides */rz 这条命令，查看系统自带的软件包信息</li>
 </ul>
-<p>修改 <strong>themes/yilia/</strong> 下的 <strong>_config.yml</strong> 文件下的 <strong>subnav: weibo</strong><br><img src="/images/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/subnav.png" alt="subnav"></p>
+<p><img src="/images/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/ml1.png" alt="命令"></p>
+<p>在输出的信息中，可以看出 <strong>rz</strong> 包的路径，说明 <strong>rz</strong> 包是存在的。</p>
 <ul>
-<li>设置QQ<br>修改 <strong>themes/yilia/</strong> 下的 <strong>_config.yml</strong> 文件下的 <strong>subnav: qq</strong><br>qq: <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3025503553&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener">http://wpa.qq.com/msgrd?v=3&amp;uin=3025503553&amp;site=qq&amp;menu=yes</a></li>
+<li>2.确认 rz 包存在之后，使用命令 yum -y install lrzsz 进行包的安装，如图：</li>
 </ul>
-<p>把<strong>uin</strong>的内容改为自己的QQ号</p>
+<p><img src="/images/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/ml2.png" alt="命令"></p>
+<p> 第一次安装时，完成之后，会有<strong>complete</strong>（完成）提示。</p>
+<ul>
+<li>3.安装好之后，就可以使用 rz 命令将本地文件上传到 linux 服务器了，输入 rz 命令，找到要上传的文件，如图：</li>
+</ul>
+<p><img src="/images/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/ml3.png" alt="命令"></p>
+<p><img src="/images/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/sd.png" alt="命令"></p>
+<ul>
+<li>4.上传完后，不会有显示，可以使用命令 ls -l 查看文件信息，上传的路径默认是 linux 服务器当前的目录，所以在上传文件之前最好首先选择好目录，避免上传完之后进行移动操作的麻烦。</li>
+</ul>
+<p><img src="/images/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/rz.png" alt="命令"></p>
+<p><img src="/images/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/ls.png" alt="命令"></p>
+<ul>
+<li>5.从传输速率可以发现，每秒只有几十KB，进行大文件传输会很耗时，只适合小文件的传输</li>
+</ul>
+<h1 id="二、使用-Xftp-工具进行传输"><a href="#二、使用-Xftp-工具进行传输" class="headerlink" title="二、使用 Xftp 工具进行传输"></a>二、使用 Xftp 工具进行传输</h1><p>下载地址: <a href="https://www.netsarang.com/zh/xftp/" target="_blank" rel="noopener">Xftp</a></p>
+<ul>
+<li>1.新建会话，输入对应内容</li>
+</ul>
+<p><img src="/images/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/xj.png" alt="命令"></p>
+<p>名称 随便写<br>主机 填写服务器ip</p>
+<ul>
+<li>2.左边为本地文件，右边为服务器文件</li>
+</ul>
+<p><img src="/images/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/jm.png" alt="命令"></p>
+<p>传输方式可以是右键单击选择传输，也可以是用鼠标左键拖动文件</p>
 
       
 
@@ -213,7 +242,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">yilia</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color2">服务器 传输</a>
         		</li>
       		
 		</ul>
@@ -269,7 +298,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/30/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/23/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -283,18 +312,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/03/win10-%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          win10 远程桌面连接问题 
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/26/%E5%B0%8F%E4%BB%99%E5%A5%B3/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">小仙女</div>
+    <a href="/2019/12/19/MySQL%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%E5%BD%92%E7%BA%B3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MySQL常用函数归纳</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -322,7 +342,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hexo-yilia主题配置" data-title="hexo yilia主题配置" data-url="http://yoursite.com/2019/11/30/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"></div>
+	<div class="ds-thread" data-thread-key="将windows下的文件上传到阿里云Linux服务器上" data-title="将windows下的文件上传到阿里云Linux服务器上" data-url="http://yoursite.com/2019/12/23/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -344,7 +364,7 @@
   
 
   
-  <div id="SOHUCS" sid="hexo-yilia主题配置" ></div> 
+  <div id="SOHUCS" sid="将windows下的文件上传到阿里云Linux服务器上" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({

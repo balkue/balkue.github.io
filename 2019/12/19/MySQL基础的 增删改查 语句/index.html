@@ -6,21 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>hexo yilia主题配置 | BaLkue</title>
+  <title>MySQL基础的 增删改查 语句 | BaLkue</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在b站看到 up主 CodeSheep 关于hexo博客搭建的视频,自己跟着操作了一遍。成功的把博客搭建起来了，在此谢谢 CodeSheep 的奉献。下方放上视频地址：手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo">
-<meta name="keywords" content="yilia">
+  <meta name="description" content="整理一下MySQL常见的语句&#x2F;函数,MySQL的每条语句都以英文的分号( ; )结尾。">
+<meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo yilia主题配置">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;30&#x2F;hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE&#x2F;index.html">
+<meta property="og:title" content="MySQL基础的 增删改查 语句">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;19&#x2F;MySQL%E5%9F%BA%E7%A1%80%E7%9A%84%20%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%20%E8%AF%AD%E5%8F%A5&#x2F;index.html">
 <meta property="og:site_name" content="BaLkue">
-<meta property="og:description" content="在b站看到 up主 CodeSheep 关于hexo博客搭建的视频,自己跟着操作了一遍。成功的把博客搭建起来了，在此谢谢 CodeSheep 的奉献。下方放上视频地址：手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo">
+<meta property="og:description" content="整理一下MySQL常见的语句&#x2F;函数,MySQL的每条语句都以英文的分号( ; )结尾。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE&#x2F;%E5%BE%AE%E5%8D%9A.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE&#x2F;subnav.png">
-<meta property="og:updated_time" content="2019-12-10T10:43:42.818Z">
+<meta property="og:updated_time" content="2019-12-19T09:07:57.059Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE&#x2F;%E5%BE%AE%E5%8D%9A.png">
   
     <link rel="alternative" href="/atom.xml" title="BaLkue" type="application/atom+xml">
   
@@ -146,39 +143,40 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo-yilia主题配置" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MySQL基础的 增删改查 语句" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo yilia主题配置
+      MySQL基础的 增删改查 语句
     </h1>
   
 
         
-        <a href="/2019/11/30/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-  	<time datetime="2019-11-30T06:58:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-30</time>
+        <a href="/2019/12/19/MySQL%E5%9F%BA%E7%A1%80%E7%9A%84%20%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%20%E8%AF%AD%E5%8F%A5/" class="archive-article-date">
+  	<time datetime="2019-12-19T07:11:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在b站看到 up主 <strong>CodeSheep</strong> 关于hexo博客搭建的视频,自己跟着操作了一遍。成功的把博客搭建起来了，在此谢谢 CodeSheep 的奉献。<br>下方放上视频地址：<br><a href="https://www.bilibili.com/video/av44544186?from=search&seid=1340218828639235414" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a><br> <a id="more"></a></p>
-<h2 id="下面开始对yilia主题开始进行配置"><a href="#下面开始对yilia主题开始进行配置" class="headerlink" title="下面开始对yilia主题开始进行配置"></a>下面开始对yilia主题开始进行配置</h2><ul>
-<li><p>对文章的全文显示进行限制，只显示一部分内容：<br>在 MD 格式文章的正文插入 <strong><code>&lt;!-- more --&gt;</code></strong>即可，只会显示它之前的，此后的就不显示，点击文章标题，全文阅读才可看到，同时打开themes/yilia/下的 _config.yml文件，注释掉以下内容，去掉重复显示全文的选项。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 文章太长，截断按钮文字</span><br><span class="line"># excerpt_link: more</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置微博<br>在网页上登陆自己的<a href="https://weibo.com" target="_blank" rel="noopener">微博</a>,点击首页。<br><img src="/images/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/%E5%BE%AE%E5%8D%9A.png" alt="微博"><br>把网站复制下来，去掉 <strong>/home</strong> 之后的内容<br><a href="https://weibo.com/u/5650460866" target="_blank" rel="noopener">https://weibo.com/u/5650460866</a></p>
+        <p>整理一下MySQL常见的语句/函数,MySQL的每条语句都以英文的分号( <strong>;</strong> )结尾。</p>
+<a id="more"></a>
+<h1 id="一、简单的-增删改查-语句"><a href="#一、简单的-增删改查-语句" class="headerlink" title="一、简单的 增删改查 语句"></a>一、简单的 增删改查 语句</h1><ul>
+<li>1.创建一个数据库<br>格式为： create database 数据库名;<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">database</span> <span class="keyword">test</span>;</span><br></pre></td></tr></table></figure></li>
+<li>2.切换数据库<br>格式为： use  数据库名;<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> <span class="keyword">test</span>;</span><br></pre></td></tr></table></figure></li>
+<li>3.创建一个表<br>格式为： create table 表名(内容 类型);<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> student(<span class="built_in">number</span> <span class="built_in">int</span> , <span class="keyword">name</span> <span class="built_in">char</span>(<span class="number">32</span>));</span><br></pre></td></tr></table></figure></li>
+<li>4.向表中插入信息<br>格式为： insert into 表名 values(表中的内容);<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> student <span class="keyword">values</span>(<span class="number">1</span>, <span class="string">'xiaoming'</span>, <span class="number">99</span>);</span><br></pre></td></tr></table></figure></li>
+<li>5.从表格中删除信息<br>格式为： delete from 表名 where 列名 = 条件;<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> student <span class="keyword">where</span> <span class="keyword">name</span> = <span class="string">'xiaoming'</span>;</span><br></pre></td></tr></table></figure></li>
+<li>6.查询表中的内容<br>格式为： select 列名 from 表名 where 列名 = 条件;<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> score <span class="keyword">from</span> student <span class="keyword">where</span> <span class="keyword">name</span> = <span class="string">'xiaoming'</span>;</span><br></pre></td></tr></table></figure></li>
+<li>7.我们可以用这样的语句查询所有的信息<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> student;</span><br></pre></td></tr></table></figure></li>
+<li>8.修改表中的数据<br>格式为： update 表名 set 列名 = 新内容 where 列名 = 条件;<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> student <span class="keyword">set</span> score = <span class="number">66</span> <span class="keyword">where</span> <span class="keyword">name</span> = <span class="string">'xiaoming'</span>;</span><br></pre></td></tr></table></figure></li>
+<li>9.从数据库中删除一个表<br>格式为： drop table 表名;<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> student;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>修改 <strong>themes/yilia/</strong> 下的 <strong>_config.yml</strong> 文件下的 <strong>subnav: weibo</strong><br><img src="/images/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/subnav.png" alt="subnav"></p>
-<ul>
-<li>设置QQ<br>修改 <strong>themes/yilia/</strong> 下的 <strong>_config.yml</strong> 文件下的 <strong>subnav: qq</strong><br>qq: <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3025503553&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener">http://wpa.qq.com/msgrd?v=3&amp;uin=3025503553&amp;site=qq&amp;menu=yes</a></li>
-</ul>
-<p>把<strong>uin</strong>的内容改为自己的QQ号</p>
 
       
 
@@ -213,7 +211,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">yilia</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">MySQL</a>
         		</li>
       		
 		</ul>
@@ -269,7 +267,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/30/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/19/MySQL%E5%9F%BA%E7%A1%80%E7%9A%84%20%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%20%E8%AF%AD%E5%8F%A5/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -283,18 +281,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/03/win10-%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/12/19/MySQL%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%E5%BD%92%E7%BA%B3/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          win10 远程桌面连接问题 
+          MySQL常用函数归纳
         
       </div>
     </a>
   
   
-    <a href="/2019/11/26/%E5%B0%8F%E4%BB%99%E5%A5%B3/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">小仙女</div>
+    <a href="/2019/12/10/mysql%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">mysql连接报错解决方法</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -322,7 +320,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hexo-yilia主题配置" data-title="hexo yilia主题配置" data-url="http://yoursite.com/2019/11/30/hexo-yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"></div>
+	<div class="ds-thread" data-thread-key="MySQL基础的 增删改查 语句" data-title="MySQL基础的 增删改查 语句" data-url="http://yoursite.com/2019/12/19/MySQL%E5%9F%BA%E7%A1%80%E7%9A%84%20%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%20%E8%AF%AD%E5%8F%A5/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -344,7 +342,7 @@
   
 
   
-  <div id="SOHUCS" sid="hexo-yilia主题配置" ></div> 
+  <div id="SOHUCS" sid="MySQL基础的 增删改查 语句" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
