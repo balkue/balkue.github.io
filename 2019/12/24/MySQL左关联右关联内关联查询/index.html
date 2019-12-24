@@ -6,20 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>mysql连接报错解决方法 | BaLkue</title>
+  <title>MySQL左关联右关联内关联查询 | BaLkue</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="总结一下遇到的MySQL报错以及解决办法 1045报错1045  - Access denied for user ‘root’@’localhost’ (using password:YES)  报错的意思是说：用户“root”@本地主机的访问被拒绝错误的本质原因是用户密码出现错误。 解决方法：1.检查密码是否输入正确；2.">
-<meta name="keywords" content="MySQL 报错">
+  <meta name="description" content="一、MySQL左关联右关联内关联查询有两张表数据如下：表1: userinfo  表2: userinfo 表  写出关联查询语句，查出的结果如下：">
+<meta name="keywords" content="MySQL 关联查询">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mysql连接报错解决方法">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;10&#x2F;mysql%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95&#x2F;index.html">
+<meta property="og:title" content="MySQL左关联右关联内关联查询">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;24&#x2F;MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2&#x2F;index.html">
 <meta property="og:site_name" content="BaLkue">
-<meta property="og:description" content="总结一下遇到的MySQL报错以及解决办法 1045报错1045  - Access denied for user ‘root’@’localhost’ (using password:YES)  报错的意思是说：用户“root”@本地主机的访问被拒绝错误的本质原因是用户密码出现错误。 解决方法：1.检查密码是否输入正确；2.">
+<meta property="og:description" content="一、MySQL左关联右关联内关联查询有两张表数据如下：表1: userinfo  表2: userinfo 表  写出关联查询语句，查出的结果如下：">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;mysql%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95&#x2F;1045.jpg">
-<meta property="og:updated_time" content="2019-12-10T11:06:56.996Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2&#x2F;userinfo.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2&#x2F;useraction.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2&#x2F;left.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2&#x2F;right.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2&#x2F;inner.png">
+<meta property="og:updated_time" content="2019-12-24T08:48:27.664Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;mysql%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95&#x2F;1045.jpg">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2&#x2F;userinfo.png">
   
     <link rel="alternative" href="/atom.xml" title="BaLkue" type="application/atom+xml">
   
@@ -145,32 +149,56 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-mysql连接报错解决方法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MySQL左关联右关联内关联查询" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      mysql连接报错解决方法
+      MySQL左关联右关联内关联查询
     </h1>
   
 
         
-        <a href="/2019/12/10/mysql%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2019-12-10T10:20:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-10</time>
+        <a href="/2019/12/24/MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/" class="archive-article-date">
+  	<time datetime="2019-12-24T07:59:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="总结一下遇到的MySQL报错以及解决办法"><a href="#总结一下遇到的MySQL报错以及解决办法" class="headerlink" title="总结一下遇到的MySQL报错以及解决办法"></a>总结一下遇到的MySQL报错以及解决办法</h1><ul>
-<li><strong>1045</strong>报错<br>1045  - Access denied for user ‘root’@’localhost’ (using password:YES)<br><img src="/images/mysql%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/1045.jpg" alt="1045"></li>
+        <h1 id="一、MySQL左关联右关联内关联查询"><a href="#一、MySQL左关联右关联内关联查询" class="headerlink" title="一、MySQL左关联右关联内关联查询"></a>一、MySQL左关联右关联内关联查询</h1><p>有两张表数据如下：<br><strong>表1: userinfo</strong></p>
+<p><img src="/images/MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/userinfo.png" alt="userinfo"></p>
+<p><strong>表2: userinfo 表</strong></p>
+<p><img src="/images/MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/useraction.png" alt="useraction"></p>
+<p><strong>写出关联查询语句，查出的结果如下：</strong></p>
+<p><img src="/images/MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/left.png" alt="left"></p>
+<a id="more"></a>
+
+<ul>
+<li><h4 id="1-左关联"><a href="#1-左关联" class="headerlink" title="1.左关联"></a>1.左关联</h4>从上图中可以看出。此查询用的是左关联查询（Null值在右边），所以我们用左关联语句：</li>
 </ul>
-<p>报错的意思是说：<strong>用户“root”@本地主机的访问被拒绝</strong><br>错误的本质原因是<strong>用户密码出现错误</strong>。</p>
-<p>解决方法：<br>1.检查密码是否输入正确；<br>2.</p>
-<hr>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> a.USERID,a.USERNAME,a.AGE,b.ACTION</span><br><span class="line"><span class="keyword">from</span> userinfo a <span class="keyword">left</span> <span class="keyword">join</span> useraction b <span class="keyword">on</span> a.USERID=b.USERID</span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> USERNAME </span><br><span class="line">;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h4 id="2-右关联"><a href="#2-右关联" class="headerlink" title="2.右关联"></a>2.右关联</h4>那他的右关联怎么写呢？语法是不变的把 left 改成  right 就好了</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> a.USERID,a.USERNAME,a.AGE,b.ACTION</span><br><span class="line"><span class="keyword">from</span> userinfo a</span><br><span class="line"><span class="keyword">right</span> <span class="keyword">join</span> useraction b <span class="keyword">on</span> a.USERID=b.USERID</span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> USERNAME </span><br><span class="line">;</span><br></pre></td></tr></table></figure>
+
+<p>查出的结果如下（Nill值在左边）：</p>
+<p><img src="/images/MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/right.png" alt="right"></p>
+<ul>
+<li><h4 id="3-内关联"><a href="#3-内关联" class="headerlink" title="3.内关联"></a>3.内关联</h4>既然左右关联都有了，何不再来多了解一个内关联呢，先看内关联语句：</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> a.USERID,a.USERNAME,a.AGE,b.ACTION</span><br><span class="line"><span class="keyword">from</span> userinfo a</span><br><span class="line"><span class="keyword">inner</span> <span class="keyword">join</span> useraction b <span class="keyword">on</span> a.USERID=b.USERID</span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> USERNAME </span><br><span class="line">;</span><br></pre></td></tr></table></figure>
+<p>查出的结果如下（无Nill值）：</p>
+<p><img src="/images/MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/inner.png" alt="inner"></p>
+<h1 id="二、特点"><a href="#二、特点" class="headerlink" title="二、特点:"></a>二、特点:</h1><ul>
+<li><h4 id="左连接：左边有的，右边没有的为null"><a href="#左连接：左边有的，右边没有的为null" class="headerlink" title="左连接：左边有的，右边没有的为null"></a>左连接：左边有的，右边没有的为null</h4></li>
+<li><h4 id="右连接：左边没有的，右边有的为null"><a href="#右连接：左边没有的，右边有的为null" class="headerlink" title="右连接：左边没有的，右边有的为null"></a>右连接：左边没有的，右边有的为null</h4></li>
+<li><h4 id="内连接：显示左边右边共有的"><a href="#内连接：显示左边右边共有的" class="headerlink" title="内连接：显示左边右边共有的"></a>内连接：显示左边右边共有的</h4></li>
+</ul>
 
       
 
@@ -205,7 +233,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">MySQL 报错</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">MySQL 关联查询</a>
         		</li>
       		
 		</ul>
@@ -261,7 +289,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/10/mysql%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/24/MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -275,18 +303,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/19/MySQL%E5%9F%BA%E7%A1%80%E7%9A%84%20%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%20%E8%AF%AD%E5%8F%A5/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MySQL基础的 增删改查 语句
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/12/08/Markdown%E8%AF%AD%E6%B3%95%E4%BB%A5%E5%8F%8AMarkdown%E6%96%87%E7%AB%A0%E8%AE%BE%E7%BD%AE/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Markdown语法以及Markdown文章设置</div>
+    <a href="/2019/12/23/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">将windows下的文件上传到阿里云Linux服务器上</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -314,7 +333,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="mysql连接报错解决方法" data-title="mysql连接报错解决方法" data-url="http://yoursite.com/2019/12/10/mysql%E8%BF%9E%E6%8E%A5%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"></div>
+	<div class="ds-thread" data-thread-key="MySQL左关联右关联内关联查询" data-title="MySQL左关联右关联内关联查询" data-url="http://yoursite.com/2019/12/24/MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -336,7 +355,7 @@
   
 
   
-  <div id="SOHUCS" sid="mysql连接报错解决方法" ></div> 
+  <div id="SOHUCS" sid="MySQL左关联右关联内关联查询" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
