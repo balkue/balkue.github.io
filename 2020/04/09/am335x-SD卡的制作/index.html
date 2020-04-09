@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>am335x SD卡的制作 | BaLkue</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="am335x SD卡的制作">
+  <meta name="description" content="1.格式化SD卡并建立boot和rootfs两个分区 进入到&#x2F;mnt 目录下，找到mkcard.sh 文件 接着执行mkcard.sh1.&#x2F;mkcard.sh &#x2F;dev&#x2F;sdb 完成后把SD卡拨了再插回来">
 <meta name="keywords" content="fanconn">
 <meta property="og:type" content="article">
 <meta property="og:title" content="am335x SD卡的制作">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;09&#x2F;am335x-SD%E5%8D%A1%E7%9A%84%E5%88%B6%E4%BD%9C&#x2F;index.html">
 <meta property="og:site_name" content="BaLkue">
-<meta property="og:description" content="am335x SD卡的制作">
+<meta property="og:description" content="1.格式化SD卡并建立boot和rootfs两个分区 进入到&#x2F;mnt 目录下，找到mkcard.sh 文件 接着执行mkcard.sh1.&#x2F;mkcard.sh &#x2F;dev&#x2F;sdb 完成后把SD卡拨了再插回来">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:updated_time" content="2020-04-09T15:20:56.710Z">
+<meta property="og:updated_time" content="2020-04-09T15:23:30.496Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="BaLkue" type="application/atom+xml">
@@ -163,14 +163,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="am335x-SD卡的制作"><a href="#am335x-SD卡的制作" class="headerlink" title="am335x SD卡的制作"></a>am335x SD卡的制作</h1><a id="more"></a>
-
-<h3 id="1-格式化SD卡并建立boot和rootfs两个分区"><a href="#1-格式化SD卡并建立boot和rootfs两个分区" class="headerlink" title="1.格式化SD卡并建立boot和rootfs两个分区"></a>1.格式化SD卡并建立boot和rootfs两个分区</h3><ul>
+        <h3 id="1-格式化SD卡并建立boot和rootfs两个分区"><a href="#1-格式化SD卡并建立boot和rootfs两个分区" class="headerlink" title="1.格式化SD卡并建立boot和rootfs两个分区"></a>1.格式化SD卡并建立boot和rootfs两个分区</h3><ul>
 <li>进入到/mnt 目录下，找到<strong>mkcard.sh</strong> 文件</li>
 <li>接着执行mkcard.sh<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./mkcard.sh /dev/sdb</span><br></pre></td></tr></table></figure>
-完成后把SD卡拨了再插回来<h3 id="2-挂载"><a href="#2-挂载" class="headerlink" title="2.挂载"></a>2.挂载</h3>把12.04操作系统拷贝到SD卡里<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp /mnt/ubuntu-12.04.5-zwifi-bra8/boot/* /media/alan/boot -v</span><br><span class="line">cp /mnt/ubuntu-12.04.5-zwifi-bra8/rootfs/* /media/alan/rootfs -va</span><br></pre></td></tr></table></figure>
-使用 <strong>df</strong> 命令，查看是否挂载成功</li>
+完成后把SD卡拨了再插回来</li>
 </ul>
+<a id="more"></a>
+
+<h3 id="2-挂载"><a href="#2-挂载" class="headerlink" title="2.挂载"></a>2.挂载</h3><p> 把12.04操作系统拷贝到SD卡里</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp /mnt/ubuntu-12.04.5-zwifi-bra8/boot/* /media/alan/boot -v</span><br><span class="line">cp /mnt/ubuntu-12.04.5-zwifi-bra8/rootfs/* /media/alan/rootfs -va</span><br></pre></td></tr></table></figure>
+<p>使用 <strong>df</strong> 命令，查看是否挂载成功</p>
 <p>sdb1 挂载在 /media/alan/boot<br>sdb2 挂载在 /media/alan/rootfs</p>
 <p>看到以上两条信息说明挂载成功。</p>
 
@@ -276,6 +278,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2020/04/09/%E7%94%A8SD%E5%8D%A1%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E7%B3%BB%E7%BB%9F%E6%94%BE%E8%BF%9Bemmc%E9%87%8C/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          用SD卡制作自己的系统放进emmc里
+        
+      </div>
+    </a>
   
   
     <a href="/2019/12/27/socket%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
@@ -435,6 +446,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">MySQL 关联查询</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">MySQL</a>
               </li>
              
@@ -443,19 +458,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">MySQL 报错</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">MySQL 关联查询</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">yilia</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -471,15 +486,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">面试 算法 习题</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">小仙女 小姐姐 小可爱</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">面试 算法 习题</a>
               </li>
             
             <div class="clearfix"></div>
