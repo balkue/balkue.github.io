@@ -8,14 +8,14 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>用SD卡制作自己的系统放进emmc里 | BaLkue</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、选择自己想要的操作系统制作博主选用14.04.6版本的ubuntu  首先先创建一个目录(jiaqian_14.04)来放我们的操作系统，并把相应文件放进去123456mkdir &#x2F;mnt&#x2F;jiaqian_14.04    mkdir &#x2F;mnt&#x2F;jiaqian_14.04&#x2F;rootfcd &#x2F;mnt&#x2F;jiaqian_14.04&#x2F;rootfcp &#x2F;mnt&#x2F;ubuntu-base-14.04-bas">
+  <meta name="description" content="一、选择自己想要的操作系统制作博主选用14.04.6版本的ubuntu  首先先创建一个目录(jiaqian_14.04)来放我们的操作系统，并把相应文件放进去12345678mkdir &#x2F;mnt&#x2F;jiaqian_14.04    mkdir &#x2F;mnt&#x2F;jiaqian_14.04&#x2F;rootfcd &#x2F;mnt&#x2F;jiaqian_14.04&#x2F;rootfcp &#x2F;mnt&#x2F;ubuntu-base-14.04-b">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用SD卡制作自己的系统放进emmc里">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;09&#x2F;%E7%94%A8SD%E5%8D%A1%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84%E7%B3%BB%E7%BB%9F%E6%94%BE%E8%BF%9Bemmc%E9%87%8C&#x2F;index.html">
 <meta property="og:site_name" content="BaLkue">
-<meta property="og:description" content="一、选择自己想要的操作系统制作博主选用14.04.6版本的ubuntu  首先先创建一个目录(jiaqian_14.04)来放我们的操作系统，并把相应文件放进去123456mkdir &#x2F;mnt&#x2F;jiaqian_14.04    mkdir &#x2F;mnt&#x2F;jiaqian_14.04&#x2F;rootfcd &#x2F;mnt&#x2F;jiaqian_14.04&#x2F;rootfcp &#x2F;mnt&#x2F;ubuntu-base-14.04-bas">
+<meta property="og:description" content="一、选择自己想要的操作系统制作博主选用14.04.6版本的ubuntu  首先先创建一个目录(jiaqian_14.04)来放我们的操作系统，并把相应文件放进去12345678mkdir &#x2F;mnt&#x2F;jiaqian_14.04    mkdir &#x2F;mnt&#x2F;jiaqian_14.04&#x2F;rootfcd &#x2F;mnt&#x2F;jiaqian_14.04&#x2F;rootfcp &#x2F;mnt&#x2F;ubuntu-base-14.04-b">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:updated_time" content="2020-04-09T16:11:23.849Z">
+<meta property="og:updated_time" content="2020-04-09T16:31:38.517Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="BaLkue" type="application/atom+xml">
@@ -164,7 +164,7 @@
       
         <h2 id="一、选择自己想要的操作系统制作"><a href="#一、选择自己想要的操作系统制作" class="headerlink" title="一、选择自己想要的操作系统制作"></a>一、选择自己想要的操作系统制作</h2><p>博主选用14.04.6版本的ubuntu</p>
 <ul>
-<li>首先先创建一个目录(<strong>jiaqian_14.04</strong>)来放我们的操作系统，并把相应文件放进去<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir /mnt/jiaqian_14.04    </span><br><span class="line">mkdir /mnt/jiaqian_14.04/rootf</span><br><span class="line">cd /mnt/jiaqian_14.04/rootf</span><br><span class="line">cp /mnt/ubuntu-base-14.04-base-armhf_wuzhou/ubuntu-base-14.04.5-base-armhf.tar.gz ./ </span><br><span class="line">cp /mnt/ubuntu-base-14.04-base-armhf_wuzhou_chezai/rootfs/UbuntuCoreSetup.sh  </span><br><span class="line">./UbuntuCoreSetup.sh trusty armhf</span><br></pre></td></tr></table></figure></li>
+<li>首先先创建一个目录(<strong>jiaqian_14.04</strong>)来放我们的操作系统，并把相应文件放进去<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mkdir /mnt/jiaqian_14.04    </span><br><span class="line">mkdir /mnt/jiaqian_14.04/rootf</span><br><span class="line">cd /mnt/jiaqian_14.04/rootf</span><br><span class="line">cp /mnt/ubuntu-base-14.04-base-armhf_wuzhou/ubuntu-base-14.04.5-base-armhf.tar.gz ./ </span><br><span class="line">cp /mnt/ubuntu-base-14.04-base-armhf_wuzhou_chezai/rootfs/UbuntuCoreSetup.sh  </span><br><span class="line">./UbuntuCoreSetup.sh trusty armhf              </span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure></li>
 <li>搞一个qemu-arm<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/bin/qemu-arm-static usr/bin/         </span><br><span class="line">for m in `echo sys proc dev`; do mount --bind /$m $m; done;    </span><br><span class="line">LC_ALL=C; chroot . /bin/bash          ---&gt;进入qemu-arm </span><br><span class="line">apt-get intsall vim usbutils           ---&gt;安装vim、usbutils软件  </span><br><span class="line">apt-get update                        ---&gt;获取最新资源包（选做）</span><br><span class="line">exit                      ---&gt;退出qemu-arm</span><br><span class="line">for m in `echo sys proc dev`; do umount $m; done;</span><br><span class="line">sync</span><br></pre></td></tr></table></figure></li>
 <li>把emmc和rootfs弄好<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">mkdir /mnt/jiaqian_14.04/emmc </span><br><span class="line">cd /mnt/jiaqian_14.04/emmc</span><br><span class="line">cp /media/alan/boot/emmc/* ./ -va   ---&gt;从别的地方（已成功的）复制emmc文件过来</span><br><span class="line">cp /media/alan/rootfs/* ./ -va      ---&gt;从别的地方（已成功的）复制rootfs文件过</span><br><span class="line">cd /opt/ti-processor-sdk-linux-am335x-evm-01.00.00.03/board-support/</span><br><span class="line">cd linux-3.14.43+gitAUTOINC+875c69b2c3-g875c69b_wuzhou_iccard/</span><br><span class="line">source set_env.sh</span><br><span class="line">make</span><br><span class="line">cp arch/arm/boot/uImage /mnt/jiaqian_14.04/emmc/</span><br><span class="line">cp arch/arm/boot/dts/am335x-wuzhou.dtb /mnt/jiaqian_14.04/emmc/</span><br><span class="line">make INSTALL_MOD_PATH=/mnt/jiaqian_14.04/rootfs/ modules_install    ---&gt;生成的文件在 /mnt/jiaqian_14.04/rootfs/lib/modules/3.14.43-g875c69b/ 目录下</span><br></pre></td></tr></table></figure></li>
 <li>把做好的文件放进SD卡<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /mnt/jiaqian_14.04/</span><br><span class="line">cp emmc/* /media/alan/boot/emmc/ -va</span><br><span class="line">cp rootfs /media/alan/rootfs/ -va</span><br><span class="line">sync</span><br></pre></td></tr></table></figure>
@@ -423,11 +423,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">MySQL 关联查询</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">MySQL</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">fanconn</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -439,10 +443,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">fanconn</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">MySQL 报错</a>
               </li>
              
@@ -451,11 +451,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">win10 远程桌面连接</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">tmux</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">tmux</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">win10 远程桌面连接</a>
               </li>
              
               <li class="article-tag-list-item">
