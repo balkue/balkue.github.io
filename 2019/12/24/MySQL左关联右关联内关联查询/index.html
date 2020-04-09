@@ -21,7 +21,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2&#x2F;left.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2&#x2F;right.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2&#x2F;inner.png">
-<meta property="og:updated_time" content="2019-12-24T08:48:27.664Z">
+<meta property="og:updated_time" content="2019-12-24T08:53:02.843Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;MySQL%E5%B7%A6%E5%85%B3%E8%81%94%E5%8F%B3%E5%85%B3%E8%81%94%E5%86%85%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2&#x2F;userinfo.png">
   
@@ -181,6 +181,7 @@
 <li><h4 id="1-左关联"><a href="#1-左关联" class="headerlink" title="1.左关联"></a>1.左关联</h4>从上图中可以看出。此查询用的是左关联查询（Null值在右边），所以我们用左关联语句：</li>
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> a.USERID,a.USERNAME,a.AGE,b.ACTION</span><br><span class="line"><span class="keyword">from</span> userinfo a <span class="keyword">left</span> <span class="keyword">join</span> useraction b <span class="keyword">on</span> a.USERID=b.USERID</span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> USERNAME </span><br><span class="line">;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><h4 id="2-右关联"><a href="#2-右关联" class="headerlink" title="2.右关联"></a>2.右关联</h4>那他的右关联怎么写呢？语法是不变的把 left 改成  right 就好了</li>
 </ul>
@@ -302,6 +303,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/12/24/tmux%E7%9A%84%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          tmux的基础使用说明
+        
+      </div>
+    </a>
   
   
     <a href="/2019/12/23/%E5%B0%86windows%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A/" id="article-nav-older" class="article-nav-link-wrap">
@@ -461,11 +471,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">MySQL 关联查询</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">MySQL</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">MySQL 关联查询</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">MySQL 报错</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">tmux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -473,7 +495,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">MySQL 报错</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">小仙女 小姐姐 小可爱</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -485,11 +507,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">小仙女 小姐姐 小可爱</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">面试 算法 习题</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">面试 算法 习题</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">服务器</a>
               </li>
             
             <div class="clearfix"></div>
